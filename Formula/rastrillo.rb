@@ -1,8 +1,8 @@
 class Rastrillo < Formula
   desc "CARLOS web framework CLI: scaffold and generate routing for CARLOS apps"
   homepage "https://github.com/carlosframework/rastrillo"
-  url "https://github.com/carlosframework/rastrillo/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "79c84e093c7c33d7b3e7ae0664b856b5b25212b523e864bd9d37ea1503ecb4ca"
+  url "https://github.com/carlosframework/rastrillo/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "3d61de44196e516635afc7b046474189cd49c0119df6fd6eb3c6ab02040db777"
   head "https://github.com/carlosframework/rastrillo.git", branch: "main"
 
   depends_on "go" => :build

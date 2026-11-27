@@ -1,29 +1,29 @@
 class Carlos < Formula
   desc "CARLOS platform binary: edge, host agent, and operator CLI"
   homepage "https://github.com/carlosframework/releases"
-  version "0.43.10"
+  version "0.43.11"
 
   # carlosframework/platform (where carlos is built) is private, so this
   # formula fetches a pre-built binary from carlosframework/releases
   # instead of building from source. See that repo's README for why.
   on_macos do
     on_arm do
-      url "https://github.com/carlosframework/releases/releases/download/v0.43.10/carlos-darwin-arm64"
-      sha256 "0d84c6df29098a4fa17da4d78193fbb6fad3e8dfe28c2aa7a11c1e03c49c9835"
+      url "https://github.com/carlosframework/releases/releases/download/v0.43.11/carlos-darwin-arm64"
+      sha256 "cfc4fbac623dabc23600a77b94af55623034574c28876f3fdb096146b52f5fc3"
     end
     on_intel do
-      url "https://github.com/carlosframework/releases/releases/download/v0.43.10/carlos-darwin-amd64"
-      sha256 "c9ed5bb11be9bd0d47f7d4e64ea1e9dcde147923b5d98acd156ca4afd6ba08ee"
+      url "https://github.com/carlosframework/releases/releases/download/v0.43.11/carlos-darwin-amd64"
+      sha256 "62bba2cb11bd9e25e1b2b0101d70eb1d31fcfd6561f856a53725e8709d713b61"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/carlosframework/releases/releases/download/v0.43.10/carlos-linux-arm64"
-      sha256 "3ea3f457a1eae91b7c3b3cbd289ac4ae077ce20dd0c5d631a599c13f341f188b"
+      url "https://github.com/carlosframework/releases/releases/download/v0.43.11/carlos-linux-arm64"
+      sha256 "9bfaf552450391d17027d121dc005301ca1d739611451226494e8316b5d46e50"
     end
     on_intel do
-      url "https://github.com/carlosframework/releases/releases/download/v0.43.10/carlos-linux-amd64"
-      sha256 "aa8f0b0f4b96b29ec4acf39e74e6f42616cc3a00b4dfe24114e1b31024f025d0"
+      url "https://github.com/carlosframework/releases/releases/download/v0.43.11/carlos-linux-amd64"
+      sha256 "b15579a3be63121736f597b34efaee507fd4566bca9e36c1c5705ec7a97c57f3"
     end
   end
 
@@ -34,6 +34,6 @@ class Carlos < Formula
   end
 
   test do
-    assert_match "carlos v0.43.10", shell_output("#{bin}/carlos version")
+    assert_match "carlos v0.43.11", shell_output("#{bin}/carlos version")
   end
 end
